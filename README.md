@@ -1,4 +1,4 @@
-# Serenity JUnit Starter project
+# Serenity JUnit Screenplay Starter project
 
 Get started quickly with Serenity BDD and JUnit 5 with this simple starter project. 
 
