@@ -12,7 +12,7 @@ import org.openqa.selenium.Keys;
 public class Search {
     public static Performable byKeyword(String keyword) {
         return Task.where("{0} searches for articles containing they word " + keyword,
-                          Enter.theValue(keyword).into(InputField.called("search")).thenHit(Keys.ENTER)
+                          Enter.theValue(keyword).into(InputField.withNameOrId("search")).thenHit(Keys.ENTER)
         );
     }
 }

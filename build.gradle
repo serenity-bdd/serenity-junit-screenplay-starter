@@ -18,9 +18,8 @@ ext {
     slf4jVersion = '1.7.7'
     serenityCoreVersion = '3.2.0'
     junitVersion = '5.8.2'
-    assertJVersion = '3.8.0'
+    assertJVersion = '3.22.0'
     logbackVersion = '1.2.10'
-    lombokVersion = '1.18.20'
 }
 
 dependencies {
@@ -30,9 +29,9 @@ dependencies {
                 "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
                 "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
                 "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
-                "org.junit.jupiter:junit-jupiter-engine:${junitVersion}",
                 "org.assertj:assertj-core:${assertJVersion}",
                 "ch.qos.logback:logback-classic:${logbackVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
