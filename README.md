@@ -6,11 +6,11 @@ Get started quickly with Serenity BDD and JUnit 5 with this simple starter proje
 
 Git:
 
-    git clone https://github.com/serenity-bdd/serenity-junit-starter.git
-    cd serenity-junit-starter
+    git clone https://github.com/serenity-bdd/serenity-junit-screenplay-starter
+    cd serenity-junit-screenplay-starter
 
 
-Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-starter/archive/master.zip) file.
+Or simply [download a zip](https://github.com/serenity-bdd/serenity-junit-screenplay-starter/archive/master.zip) file.
 
 ## Use Maven
 
