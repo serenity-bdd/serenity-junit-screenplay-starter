@@ -10,8 +10,13 @@
     <name>Sample Serenity BDD project using JUnit 5 and Serenity Screenplay</name>
 
     <properties>
-        <serenity.version>3.5.1</serenity.version>
-        <junit5.version>5.8.2</junit5.version>
+        <serenity.version>4.0.14</serenity.version>
+        <junit5.version>5.10.0</junit5.version>
+        <maven.surefire.version>3.1.2</maven.surefire.version>
+        <maven.failsafe.version>3.1.2</maven.failsafe.version>
+        <maven.compiler.version>3.11.0</maven.compiler.version>
+        <assertj.version>3.24.2</assertj.version>
+        <logback.version>1.2.10</logback.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <encoding>UTF-8</encoding>
         <tags></tags>
@@ -52,7 +57,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.10</version>
+            <version>${logback.version}</version>
         </dependency>
         <!-- JUNIT 5 DEPENDENCY-->
         <dependency>
@@ -70,7 +75,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.22.0</version>
+            <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -79,14 +84,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>${maven.surefire.version}</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${maven.failsafe.version}</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
@@ -114,7 +119,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
                     <source>16</source>
                     <target>16</target>
