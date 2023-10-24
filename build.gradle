@@ -1,5 +1,5 @@
 plugins {
-    id "net.serenity-bdd.serenity-gradle-plugin" version "3.5.1"
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.14"
     id 'java'
     id 'eclipse'
     id 'idea'
@@ -15,10 +15,10 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 ext {
-    slf4jVersion = '1.7.7'
-    serenityCoreVersion = '3.5.1'
-    junitVersion = '5.8.2'
-    assertJVersion = '3.22.0'
+    slf4jVersion = '1.7.30'
+    serenityCoreVersion = '4.0.14'
+    junitVersion = '5.10.0'
+    assertJVersion = '3.24.2'
     logbackVersion = '1.2.10'
 }
 
