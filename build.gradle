@@ -15,7 +15,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 ext {
-    slf4jVersion = '1.7.7'
+    slf4jVersion = '1.7.30'
     serenityCoreVersion = '4.0.15'
     junitVersion = '5.10.0'
     assertJVersion = '3.24.2'
