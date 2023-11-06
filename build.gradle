@@ -1,5 +1,5 @@
 plugins {
-    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.14"
+    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.15"
     id 'java'
     id 'eclipse'
     id 'idea'
